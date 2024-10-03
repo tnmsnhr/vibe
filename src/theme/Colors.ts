@@ -1,0 +1,75 @@
+const primary = "#7161ef"
+export const EColors = {
+    EColor50: "#eef0ff",
+    EColor100: "#e0e3ff",
+    EColor200: "#c8cbfd",
+    EColor300: "#a6aafb",
+    EColor400: "#8782f7",
+    EColor500: "#7161ef",
+    EColor600: "#6648e3",
+    EColor700: "#573ac8",
+    EColor800: "#4731a2",
+    EColor900: "#3d2f80",
+    EColor950: "#241c4a",
+    EColor1000: "#0e0b21",
+    EColorDark: "#07060c",
+    EColorInactive: "#373644"
+}
+
+export const grays = {
+    white: "#fff",
+    gray50: "#f6f6f6",
+    gray100: "#e7e7e7",
+    gray200: "#d1d1d1",
+    gray300: "#b0b0b0",
+    gray400: "#888888",
+    gray500: "#6d6d6d",
+    gray600: "#5d5d5d",
+    gray700: "#4f4f4f",
+    gray800: "#454545",
+    gray900: "#3d3d3d",
+    gray950: "#141414",
+    black: "#000"
+}
+
+export const colors = {
+    light: {
+        primary,
+        text: grays.gray950,
+        background: grays.white,
+        tint: primary,
+        tabIconDefault: "#ccc",
+        ...EColors,
+        ...grays,
+        completedBackground: primary,
+        completedPrimary: grays.white,
+        navBarBackground: grays.white,
+        successText: "green",
+        inputBackground: grays.gray50,
+        inputBorder: grays.gray950,
+        borderColor: grays.gray100,
+        activeColor: grays.gray950,
+        inActiveColor: grays.gray400,
+        iconColor: grays.gray800,
+    },
+    dark: {
+        primary,
+        text: grays.white,
+        background: EColors.EColorDark,
+        tint: primary,
+        tabIconDefault: "#ccc",
+        ...EColors,
+        ...grays,
+        white: grays.gray950,
+        completedBackground: grays.gray900,
+        completedPrimary: EColors.EColor500,
+        navBarBackground: grays.gray950,
+        successText: "green",
+        inputBackground: EColors.EColor950,
+        inputBorder: grays.white,
+        borderColor: EColors.EColor950,
+        activeColor: grays.white,
+        inActiveColor: EColors.EColorInactive,
+        iconColor: grays.gray200,
+    }
+}
